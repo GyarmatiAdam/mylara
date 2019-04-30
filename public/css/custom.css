@@ -224,7 +224,7 @@ h1{
   text-align: center;
 }
 
-/*loading screen before index page*/
+/*loading screen -> loads before index page*/
 #load_screen{
   opacity: 1;
   position: fixed;

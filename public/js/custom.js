@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     document.getElementById("footer").style.visibility = "hidden";
   } else {
     document.getElementById("footer").style.visibility = "visible";

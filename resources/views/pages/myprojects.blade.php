@@ -1,7 +1,5 @@
-@extends('layouts.app')<!--this calls the template from layouts.app
-    ||(view folder)so only the content has to be changed-->
-    @section('content')<!--starts a section where this below content 
-        ||will be inserted-->
+@extends('layouts.app')
+    @section('content')
         <body>
                 <div class="container">
                         <div class="row">
@@ -11,7 +9,62 @@
                                 <div class="col-md-6">
                                         <h1>My <small>Projects</small></h1>
                                         <div class="project_embed">
-                                                <a href="http://footballstore.unaux.com/">
+                                                <a target="_blank" href="http://adam.ezyro.com/">
+                                                <img src={{ asset('images/Github_finder.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Github finder</h2>
+                                                                <p>AJAX, CSS</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="http://calculate.ezyro.com/">
+                                                <img src={{ asset('images/calculator.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Calculator</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="http://clock.ezyro.com/">
+                                                <img src={{ asset('images/clock.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Clock</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="http://clock.ezyro.com/">
+                                                <img src={{ asset('images/message.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Message</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="http://colors.ezyro.com/">
+                                                <img src={{ asset('images/colors.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Change colors</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="http://footballstore.unaux.com/">
                                                 <img src={{ asset('images/footballshop.jpg') }} class="projectimg img-fluid" alt="Responsive image">
                                                 <div class="project_description">
                                                         <div class="project_text">  
@@ -22,7 +75,7 @@
                                                 </a>
                                         </div>
                                         <div class="project_embed">
-                                                <a href="http://adamgyarmati.unaux.com">
+                                                <a target="_blank" href="http://adamgyarmati.unaux.com">
                                                 <img src={{ asset('images/portfolio.jpg') }} class="projectimg img-fluid" alt="Responsive image">   
                                                 <div class="project_description">
                                                         <div class="project_text">
