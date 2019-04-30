@@ -31,6 +31,17 @@
                                                 </a>
                                         </div>
                                         <div class="project_embed">
+                                                <a target="_blank" href="">
+                                                <img src={{ asset('images/man.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>The Man</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
                                                 <a target="_blank" href="http://clock.ezyro.com/">
                                                 <img src={{ asset('images/clock.jpg') }} class="projectimg img-fluid" alt="Responsive image">
                                                 <div class="project_description">
@@ -42,11 +53,55 @@
                                                 </a>
                                         </div>
                                         <div class="project_embed">
-                                                <a target="_blank" href="http://clock.ezyro.com/">
+                                                <a target="_blank" href="">
                                                 <img src={{ asset('images/message.jpg') }} class="projectimg img-fluid" alt="Responsive image">
                                                 <div class="project_description">
                                                         <div class="project_text">  
                                                                 <h2>Message</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="">
+                                                <img src={{ asset('images/counter.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Counter</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="">
+                                                <img src={{ asset('images/navbar.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Navbar</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="">
+                                                <img src={{ asset('images/quotes.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Quotes</h2>
+                                                                <p>HTML, CSS, Javascript</p>
+                                                        </div>
+                                                </div>
+                                                </a>
+                                        </div>
+                                        <div class="project_embed">
+                                                <a target="_blank" href="">
+                                                <img src={{ asset('images/slider.jpg') }} class="projectimg img-fluid" alt="Responsive image">
+                                                <div class="project_description">
+                                                        <div class="project_text">  
+                                                                <h2>Image slider</h2>
                                                                 <p>HTML, CSS, Javascript</p>
                                                         </div>
                                                 </div>
