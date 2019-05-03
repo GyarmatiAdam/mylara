@@ -19,13 +19,10 @@
                         @include('inc.socialmedia')
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <div class="wel_el">
-                            <div id="line"></div>
-                            <h5 id="w1">Welcome <br> to my <br> website</h5>
-                            <h5 id="w2">Please <br> look <br> around!</h5>
-                            <h5 id="w3">Explore every page!</h5>
-                            <h5 id="w4">Create a post <br> if You like!</h5>
-                            <h5 id="w5">Have fun here <br> and <br> have a good day!</h5>
+                        <div class="wp_images">
+                            <div class="wp_start"></div>
+                            <i class="wp_btn btn_prev fa fa-angle-left" aria-hidden="true"></i>
+                            <i class="wp_btn btn_next fa fa-angle-right" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">                    
