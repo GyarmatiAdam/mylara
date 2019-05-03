@@ -8,8 +8,12 @@
                             @include('inc.socialmedia')
                         </div>
 
-                        <div class="col-md-7">                           
-                                <h1 id="post_title">Posts</h1>
+                        <div class="col-md-7">  
+                            <div id="post_title">                         
+                            <h1>Posts</h1>
+                            <p>You can see the latest posts here.</p>
+                            <p>If you want to find an older post, you can click on pagination at the bottom.</p>
+                            </div>
                             @if (count($posts) > 0)
                                 @foreach ($posts as $post)
                                 <div id="post_index">

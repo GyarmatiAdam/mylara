@@ -2,22 +2,22 @@
 <div class="social_group">       
     <div class="fixed d-none d-md-block">
         <div title="Facebook" class="social_media_buttons">
-            <a href="https://www.facebook.com/adam.gy.37" class="btn btn-lg btn-social-icon btn-facebook">
+            <a target="_blank" href="https://www.facebook.com/adam.gy.37" class="btn btn-lg btn-social-icon btn-facebook">
                 <span class="fab fa-facebook"></span>
             </a>
         </div>
         <div title="Github" class="social_media_buttons">
-            <a href="https://github.com/GyarmatiAdam" class="btn btn-lg btn-social-icon btn-github">
+            <a target="_blank" href="https://github.com/GyarmatiAdam" class="btn btn-lg btn-social-icon btn-github">
                 <span class="fab fa-github"></span>
             </a>
         </div>
         <div title="Linkedin" class="social_media_buttons">
-            <a href="https://www.linkedin.com/in/adam-gyarmati-b8b87716b/" class="btn btn-lg btn-social-icon btn-linkedin">
+            <a target="_blank" href="https://www.linkedin.com/in/adam-gyarmati-b8b87716b/" class="btn btn-lg btn-social-icon btn-linkedin">
                 <span class="fab fa-linkedin"></span>
             </a>
         </div>
         <div title="Stack Overflow" class="social_media_buttons">
-            <a href="https://stackoverflow.com/users/11037329/agyarmati?tab=profile" style="color: #f48024; background-color: #f2f2f2" class="btn btn-lg btn-social-icon">
+            <a target="_blank" href="https://stackoverflow.com/users/11037329/agyarmati?tab=profile" style="color: #f48024; background-color: #f2f2f2" class="btn btn-lg btn-social-icon">
                 <i class="fab fa-stack-overflow"></i>
             </a>
         </div>

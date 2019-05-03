@@ -4,17 +4,36 @@ body{
   background-image: linear-gradient(to right, rgb(171, 172, 173), white, white,rgb(171, 172, 173));
 }
 
-
-
 h1{
   font-weight: bold;
   text-shadow: -3px -2px 1px red;
   margin-bottom: 20px;
 }
 
+p{
+  font-weight: 600;
+  font-size: 16px;
+}
+.card-body{
+  text-align: justify;
+  margin: 3px;
+  box-shadow: 3px 5px 6px black;
+}
+
 #footer:hover{
   background-color: darkgray;
   padding-top: 4px;
+}
+
+/*myproject page button and card style*/
+#toggledown{
+  margin:2% 44% 5%;
+}
+
+.fa_plus{
+  border-radius: 50%;
+  background-color: white;
+  color: #007bb6;
 }
 
 /*login-register buttons*/
@@ -391,6 +410,7 @@ h1{
     -ms-transform: translate(-50%, -50%);
   }
 
+
 /*About me page style*/
   .about_text{
     font-size: 18px;
@@ -489,6 +509,7 @@ h1{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+
 
 /*About me page style*/
   .about_text{

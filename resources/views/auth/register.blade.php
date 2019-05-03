@@ -3,6 +3,10 @@
 @section('content')
 <body>
 <div class="container">
+    <h1>Register now</h1>
+    <p>If you are not registered yet, you can simply fill out the form below and you are ready to go!</p>
+    <p>After registration, you will be able to create, edit and delete your posts.</p>
+    <p>Your email addresse and password will be stored.</p>
     <div class="row justify-content-center">
         <div class="col-md-2">
         </div>

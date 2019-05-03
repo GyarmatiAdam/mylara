@@ -3,13 +3,15 @@
 @section('content')
     <body>
     <div class="container">
+        <h1>Edit post</h1>
+        <p>You can modify or delete your post here.</p>
         <div class="row">
             <div class="col-md-2">
                 <a href="/mylara/public/posts/" class="btn btn-warning">Go Back</a>
             </div>
 
             <div class="col-md-7">               
-                <h1>{{$post->title}}</h1>
+                <h2>{{$post->title}}</h2>
                 <img style="width:40%" src="/mylara/public/storage/cover_images/{{$post->cover_image}}" alt="">
                 <div>
                     {{$post->body}}
