@@ -19,11 +19,42 @@
                         @include('inc.socialmedia')
                     </div>
                     <div class="col-md-7 col-sm-7">
-                        <div class="wp_images">
-                            <i class="wp_btn btn_prev fa fa-angle-left" aria-hidden="true"></i>
-                            <i class="wp_btn btn_next fa fa-angle-right" aria-hidden="true"></i>
+                        <div class="wp_images"></div>
+                        <img src={{ asset('images/img-0.jpg') }} class="hidden wpsmall_img img-fluid" alt="Responsive image">  
+                        <div id="wp_text">
+                            <h3>Welcome</h3>
+                            <p>My name is Adam Gyarmati and this is my portfolio website.</p>
+                            <p>Here you will find all the important information about me.
+                                You can  have a look on my works by simply going to the 
+                                My projects page. If you want to know more about me, you will also find it here.
+                                May you cantact me?...Then find my mobile number or email adresse just on the left side.
+                                Of course as a Web-deeloper i have got my Github, Stack-Overflow and Linkedin accounts,
+                                where you will find additional infos.</p>
+                            <div>
+                                <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_start" aria-expanded="false" aria-controls="collapseExample">
+                                        When did i become a Web-developer?<br><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="wp_collapse collapse" id="collapsable_start">
+                                <div>something</div>
+                            </div> 
+                            <p>I would like to become a useful member of an amazing developer team.</p>
+                            <div>
+                                <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_why" aria-expanded="false" aria-controls="collapseExample">
+                                        Why do i want?<br><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="wp_collapse collapse" id="collapsable_why">
+                                <div>something</div>
+                            </div>
+                            <p>I would like to become a useful member of an amazing developer team.</p>
+                            <div>
+                                <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_what" aria-expanded="false" aria-controls="collapseExample">
+                                        What i would like?<br><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="wp_collapse collapse" id="collapsable_what">
+                                <div>something</div>
+                            </div>
+                            <p>I would like to become a useful member of an amazing developer team.</p>
                         </div>
-                        <img src={{ asset('images/img-0.jpg') }} class="hidden wpsmall_img img-fluid" alt="Responsive image">
                     </div>
                     <div class="col-md-2 col-sm-2">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">

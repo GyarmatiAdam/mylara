@@ -54,36 +54,31 @@ p{
   position: relative;
 }
 
-.wp_btn{
-  display: inline-block;
-  background: floralwhite;
-  color: black;
-  border: 2px;
-  padding: 1rem;
-  border-radius: 3px;
-  outline: none;
-  font-size: 40px;
-  visibility: hidden;
+#wp_text{
+  margin: 10%;
+  text-align: justify;
 }
 
-.btn_prev{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%,-50%)
+.wp_toggle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: rgb(155, 153, 153);
+  border-radius: 10px;
 }
 
-.btn_next{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(50%,-50%)
+.wp_collapse{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: rgb(214, 209, 209);
 }
-
 
 /*hidden elements only display on small screen*/
 .hidden{
-  visibility: hidden;
+  display: none;
 }
 
 /*contact page style*/
@@ -473,7 +468,7 @@ p{
 
 /*hidden elements only display on small screen*/
   .hidden{
-    visibility: visible;
+    display: inherit;
   }
 
 }
