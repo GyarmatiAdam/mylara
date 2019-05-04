@@ -1,3 +1,4 @@
+
 body{
   margin: 100px 0px 100px 0px;
   background-color: white;/*for browsers do not support linear-gradient*/
@@ -5,9 +6,9 @@ body{
 }
 
 h1{
-  font-weight: bold;
-  text-shadow: -3px -2px 1px red;
+  font-weight: 900;
   margin-bottom: 20px;
+  text-decoration: underline red;
 }
 
 p{
@@ -39,7 +40,7 @@ p{
 /*login-register buttons*/
 .logbtn{
   position: fixed;
-  right: 10%;
+  right: 5%;
 }
 
 /*welcome page style*/
@@ -49,7 +50,7 @@ p{
   background-repeat: no-repeat;
   background-size: 100%;
   flex: 0 0 100%;
-  min-height: 70vh;
+  min-height: 50vh;
   position: relative;
 }
 
@@ -62,6 +63,7 @@ p{
   border-radius: 3px;
   outline: none;
   font-size: 40px;
+  visibility: hidden;
 }
 
 .btn_prev{
@@ -192,13 +194,13 @@ p{
 }
 
 
+
 /*////////////////////////////////RESPONSIVE DESIGN STARTS FROM HERE///////////////////////////////////////////////////*/
 
 
 
 /* Desktop sized screen style from here*/
-@media screen and (min-width: 980px)  {
-
+@media screen and (min-width: 1025px)  {
 
 /*large social media buttons zoomed and moved*/
   .social_group{
@@ -313,9 +315,14 @@ p{
 
 
 /* Tablet sized screen style */ 
-@media screen  and (max-width: 979px) {
+@media screen  and (max-width: 1024px) {
 
-
+/* Welcome page images */
+  .wp_images{
+    min-height: 20vh;
+    margin-left: 40px;
+    margin-right: -20px;
+  }
 
 /*large social media buttons zoomed and moved*/
   .social_group{
@@ -413,7 +420,7 @@ p{
 
 
 /* Mobile */
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 415px)  {
   
 
   .col-md-8,
@@ -445,6 +452,17 @@ p{
 
   #post_index{
     margin: 10px;
+  }
+
+/* Welcome page images */
+  .wp_images{
+    visibility: hidden;
+  }
+  .wpsmall_img{
+    position: absolute;
+    top: -20px;
+    max-width: 80%;
+    margin: 10%;
   }
 
 /*footer style*/
