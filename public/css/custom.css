@@ -43,6 +43,75 @@ p{
   right: 5%;
 }
 
+
+/*home button rotate, zoom and changes its color*/
+.fa-home{
+  transition: 0.5s;
+  color: red;
+}
+.fa-home:hover{
+  -webkit-transform: rotate(360deg) scale(1.5);
+  transform: rotate(360deg) scale(2);
+  color: green;
+}
+
+/*navigation bar links zoom*/
+.nav-link:hover{
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
+
+/*large social media buttons zoomed and moved*/
+.social_group{
+  position: fixed;
+  left: 20px;
+}
+.btn-social-icon.btn-lg{
+    transition: 1s;
+    width: 200px;
+    border: 1px solid black;
+}
+.btn-social-icon.btn-lg:hover{
+    width: 240px; 
+}
+
+/*front page contact area style*/
+.contact {
+  position: relative;
+  width: 200px;
+}
+.contactimg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+} 
+.contactdetails {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:white;
+}
+.contact:hover .contactdetails {
+  opacity: 1;
+}
+.cont_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
 /*welcome page style*/
 .wp_images{
   background-image: url('/mylara/public/images/img-0.jpg');
@@ -195,72 +264,15 @@ p{
 
 
 /* Desktop sized screen style from here*/
-@media screen and (min-width: 1025px)  {
+@media screen and (max-width: 1199.98px)  {
 
-/*large social media buttons zoomed and moved*/
-  .social_group{
-    position: fixed;
-  }
-  .btn-social-icon.btn-lg{
-      transition: 1s;
-      width: 200px;
-      border: 1px solid black;
-  }
-  .btn-social-icon.btn-lg:hover{
-      width: 240px; 
+  
+  /*welcome page style*/
+  .wp_images{
+    flex: 0 0 100%;
+    min-height: 30vh;
   }
 
-/*home button rotate, zoom and changes its color*/
-  .fa-home{
-      transition: 0.5s;
-      color: red;
-  }
-  .fa-home:hover{
-      -webkit-transform: rotate(360deg) scale(1.5);
-      transform: rotate(360deg) scale(2);
-      color: green;
-  }
-
-/*navigation bar links zoom*/
-  .nav-link:hover{
-      transform: scale(1.2);
-      font-weight: bold;
-  }
-
-/*front page contact area style*/
-  .contact {
-      position: relative;
-      width: 200px;
-  }
-  .contactimg {
-      display: block;
-      width: 100%;
-      height: auto;
-      border: 1px solid black;
-  } 
-  .contactdetails {
-      position: absolute;
-      text-align: center;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color:white;
-  }
-  .contact:hover .contactdetails {
-      opacity: 1;
-  }
-  .cont_text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-  }
 
 /*My projects inhalt*/
   .project_embed{
@@ -310,18 +322,29 @@ p{
 
 
 /* Tablet sized screen style */ 
-@media screen  and (max-width: 1024px) {
+@media screen  and (max-width: 991.98px) {
 
-/* Welcome page images */
-  .wp_images{
-    min-height: 20vh;
-    margin-left: 40px;
-    margin-right: -20px;
-  }
+/*home button rotate, zoom and changes its color*/
+.fa-home{
+  transition: none;
+  color: red;
+}
+.fa-home:hover{
+  -webkit-transform: none;
+  transform: none;
+  color: green;
+}
+
+/*navigation bar links zoom*/
+.nav-link:hover{
+  transform: none;
+  font-weight: bold;
+}
 
 /*large social media buttons zoomed and moved*/
   .social_group{
     position: fixed;
+    left: 20px;
   }
   .btn-social-icon.btn-lg{
       transition: 1s;
@@ -414,9 +437,8 @@ p{
 
 
 
-/* Mobile */
-@media screen and (max-width: 415px)  {
-  
+/* Large mobile device */
+@media screen and (max-width: 767.98px)  {
 
   .col-md-8,
   .col-md-7,
@@ -451,13 +473,13 @@ p{
 
 /* Welcome page images */
   .wp_images{
-    visibility: hidden;
+    display: none;
   }
   .wpsmall_img{
-    position: absolute;
-    top: -20px;
-    max-width: 80%;
-    margin: 10%;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 /*footer style*/
@@ -470,5 +492,11 @@ p{
   .hidden{
     display: inherit;
   }
+
+}
+
+/*Extra small device*/
+@media (max-width: 575.98px) {
+
 
 }

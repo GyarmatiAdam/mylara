@@ -15,12 +15,12 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3">
                         @include('inc.socialmedia')
                     </div>
-                    <div class="col-md-7 col-sm-7">
+                    <div class="col-md-7">
                         <div class="wp_images"></div>
-                        <img src={{ asset('images/img-0.jpg') }} class="hidden wpsmall_img img-fluid" alt="Responsive image">  
+                        <img src={{ asset('images/img-0.jpg') }} class="hidden wpsmall_img">  
                         <div id="wp_text">
                             <h3>Welcome</h3>
                             <p>My name is Adam Gyarmati and this is my portfolio website.</p>
@@ -56,7 +56,7 @@
                             <p>I would like to become a useful member of an amazing developer team.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-2">                    
+                    <div class="col-md-2">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">
                             <a class="btn btn-primary btn-sm" href="/mylara/public/login" role="button">Login</a>
                             <a class="btn btn-success btn-sm" href="/mylara/public/register" role="button">Register</a>
