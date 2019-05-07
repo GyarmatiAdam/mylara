@@ -129,8 +129,16 @@ p{
   font-size: 30px;
 }
 
+#wp_text_end{
+  margin: 10%;
+  text-align: justify;
+  font-size: 30px;
+  position: relative;
+  float: left;
+}
 
-/*welcome page questions*/
+
+/*welcome page questions toggle*/
 .wp_toggle{
   display: block;
   margin-left: auto;
@@ -272,6 +280,44 @@ p{
   }
 }
 
+/*My projects inhalt*/
+.project_embed{
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+.projectimg{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 15%;
+}
+.project_embed:hover .project_description{
+  opacity: 0.8;
+}
+.project_description{
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:rgb(126, 214, 241);
+  border-radius: 15px;
+}
+.project_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 /*About me page style*/
 .about_img{
   border: 1px black solid;
@@ -362,6 +408,10 @@ p{
 /*navigation bar links*/
 .nav-link{
   font-size: 80%;
+}
+
+.navbar{
+ position: fixed;
 }
 
 .nav-link:hover{

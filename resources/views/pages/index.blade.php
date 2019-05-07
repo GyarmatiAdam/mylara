@@ -25,16 +25,18 @@
                             <h3>Welcome</h3>
                             <p>My name is Adam Gyarmati and this is my portfolio website.</p>
                             <p>You will find here all the important information about me and my work.
-                                To find out more of my projects, you can visit my GitHub account or simply go to the My projects 
-                                page and take a look on them.
-                                May you cantact me?...Then find my mobile number or email adresse just on the left side.
-                                Of course as a Freelancer Web Developer i have got my Github, Stack-Overflow and Linkedin accounts,
+                                To explore more of my projects, you can visit my GitHub account or simply go to the My projects 
+                                page and take a look on them.</p>
+                                <p>May you cantact me?...Then find my mobile number and email adresse just on the left side. 
+                                Feel free to use them, especially if you are hiring Entry-level junior web developers.
+                                Of course as a jobseeker i have got also my Stack-Overflow and Linkedin accounts,
                                 where you will find additional infos.</p>
                         </div>
                             <div class="row">
                                 <div id="linkedin_API">
                                 </div>
                             </div>  
+                            <div class="container">
                                 <div>
                                     <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_when" aria-expanded="false" aria-controls="collapseExample">
                                             When?            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
@@ -70,12 +72,17 @@
                                             What?            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                                 </div>
                                 <div class="wp_collapse collapse" id="collapsable_what">
-                                    <div>As i am programming every day and trying new tools and applications, 
+                                    <div>My goal is to become a professional web developer. As i am programming 
+                                        every day and trying new tools and applications, 
                                         i feel myself ready to take an entry-level position. I am looking for 
-                                        opportunities in a company, were i can ensure my personal development.
-                                        I also would like to work in a fizzy and multinational team.
+                                        opportunities in a company, were i can be a part of a fizzy and 
+                                        professional team and also have a chance to progress myself.
                                     </div>
-                                </div>                                          
+                                </div>
+                            </div>
+                                <div id="wp_text_end">
+                                    <p>Please take your time, check every page, register, write for my bolg, but most importantly... have fun!</p>
+                                </div>                                        
                     </div>
                     <div class="col-md-1">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">

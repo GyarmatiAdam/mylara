@@ -3,7 +3,7 @@
 @section('content')
 <body>
 <div class="container">
-    <h1>Login here</h1>
+    <h1>Login</h1>
     <p>If you are already registered, please write your email and password below.</p>
     <p>After you are logged in, you will be able to create, edit and delete your posts.</p>
     <div class="row justify-content-center">
