@@ -18,45 +18,66 @@
                     <div class="col-md-3">
                         @include('inc.socialmedia')
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-8">
                         <div class="wp_images"></div>
                         <img src={{ asset('images/img-0.jpg') }} class="hidden wpsmall_img">  
                         <div id="wp_text">
                             <h3>Welcome</h3>
                             <p>My name is Adam Gyarmati and this is my portfolio website.</p>
-                            <p>Here you will find all the important information about me.
-                                You can  have a look on my works by simply going to the 
-                                My projects page. If you want to know more about me, you will also find it here.
+                            <p>You will find here all the important information about me and my work.
+                                To find out more of my projects, you can visit my GitHub account or simply go to the My projects 
+                                page and take a look on them.
                                 May you cantact me?...Then find my mobile number or email adresse just on the left side.
-                                Of course as a Web-deeloper i have got my Github, Stack-Overflow and Linkedin accounts,
+                                Of course as a Freelancer Web Developer i have got my Github, Stack-Overflow and Linkedin accounts,
                                 where you will find additional infos.</p>
-                            <div>
-                                <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_start" aria-expanded="false" aria-controls="collapseExample">
-                                        When did i become a Web-developer?<br><i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                            </div>
-                            <div class="wp_collapse collapse" id="collapsable_start">
-                                <div>something</div>
-                            </div> 
-                            <p>I would like to become a useful member of an amazing developer team.</p>
-                            <div>
-                                <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_why" aria-expanded="false" aria-controls="collapseExample">
-                                        Why do i want?<br><i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                            </div>
-                            <div class="wp_collapse collapse" id="collapsable_why">
-                                <div>something</div>
-                            </div>
-                            <p>I would like to become a useful member of an amazing developer team.</p>
-                            <div>
-                                <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_what" aria-expanded="false" aria-controls="collapseExample">
-                                        What i would like?<br><i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                            </div>
-                            <div class="wp_collapse collapse" id="collapsable_what">
-                                <div>something</div>
-                            </div>
-                            <p>I would like to become a useful member of an amazing developer team.</p>
                         </div>
+                            <div class="row">
+                                <div id="linkedin_API">
+                                </div>
+                            </div>  
+                                <div>
+                                    <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_when" aria-expanded="false" aria-controls="collapseExample">
+                                            When?            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="wp_collapse collapse" id="collapsable_when">
+                                    <div>On the autumn of 2018 wright after my knee surgery, i was laying in the bed 
+                                        and i questioned myself: What do i really want to do for living?
+                                    </div>
+                                </div>                        
+                                <div>
+                                    <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_why" aria-expanded="false" aria-controls="collapseExample">
+                                            Why?            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="wp_collapse collapse" id="collapsable_why">
+                                    <div>By the time i had no idea, but i have felt i have to change career direction. 
+                                        I was reading a lot, looking for my goal. Suddenly i bumped into an advertistment 
+                                        and the description really liked me. It was about web development.
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_how" aria-expanded="false" aria-controls="collapseExample">
+                                            How?            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="wp_collapse collapse" id="collapsable_how">
+                                    <div>I started a research, what they do and how to become one of them. There are planty of 
+                                        blogs and videos on the net. I found it very interesting, so i took couple of free courses.
+                                        Afterwards i have decided to focus 100% on my studies. I went for an intensive course, where 
+                                        i have learned the basics of Front and Back-end web development.
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn wp_toggle" type="button" data-toggle="collapse" data-target="#collapsable_what" aria-expanded="false" aria-controls="collapseExample">
+                                            What?            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="wp_collapse collapse" id="collapsable_what">
+                                    <div>As i am programming every day and trying new tools and applications, 
+                                        i feel myself ready to take an entry-level position. I am looking for 
+                                        opportunities in a company, were i can ensure my personal development.
+                                        I also would like to work in a fizzy and multinational team.
+                                    </div>
+                                </div>                                          
                     </div>
-                    <div class="col-md-2">                    
+                    <div class="col-md-1">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">
                             <a class="btn btn-primary btn-sm" href="/mylara/public/login" role="button">Login</a>
                             <a class="btn btn-success btn-sm" href="/mylara/public/register" role="button">Register</a>

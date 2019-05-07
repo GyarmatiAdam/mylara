@@ -40,7 +40,7 @@ p{
 /*login-register buttons*/
 .logbtn{
   position: fixed;
-  right: 5%;
+  right: 2%;
 }
 
 
@@ -126,26 +126,50 @@ p{
 #wp_text{
   margin: 10%;
   text-align: justify;
+  font-size: 30px;
 }
 
+
+/*welcome page questions*/
 .wp_toggle{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  background-color: rgb(155, 153, 153);
+  margin-bottom: 10px;
+  width: 60%;
+  background-color: #38c172;
   border-radius: 10px;
+  text-align: center;
+  float: left;
+}
+
+.wp_toggle:hover{
+  opacity: 0.6;
 }
 
 .wp_collapse{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  background-color: rgb(214, 209, 209);
+  margin-bottom: 10px;
+  margin-top: -10px;
+  background-color: #8acea6;
+  width: 60%;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  float: left;
+  text-align: justify;
 }
 
-/*hidden elements only display on small screen*/
+#linkedin_API{
+  position: absolute;
+  border: solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+  width: 38%;
+  height: 180px;
+  right: 0;
+}
+/*hidden elements, only display on small screen*/
 .hidden{
   display: none;
 }
@@ -335,7 +359,11 @@ p{
   color: green;
 }
 
-/*navigation bar links zoom*/
+/*navigation bar links*/
+.nav-link{
+  font-size: 80%;
+}
+
 .nav-link:hover{
   transform: none;
   font-weight: bold;
@@ -345,6 +373,7 @@ p{
   .social_group{
     position: fixed;
     left: 20px;
+    margin-right: 20px;
   }
   .btn-social-icon.btn-lg{
       transition: 1s;
@@ -447,15 +476,15 @@ p{
   }
 
   p {
-    font-size: 11px;
-  }
-
-  h1{
     font-size: 13px;
   }
 
+  h1{
+    font-size: 15px;
+  }
+
   h2 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
   }
 
@@ -481,6 +510,47 @@ p{
     margin-left: auto;
     margin-right: auto;
   }
+
+/*welcome page questions*/
+.wp_toggle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 70%;
+  background-color: #38c172;
+  border-radius: 10px;
+  text-align: center;
+  float: none;
+}
+
+.wp_toggle:hover{
+  opacity: 0.6;
+}
+
+.wp_collapse{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  background-color: #8acea6;
+  width: 68%;
+  border-radius: 15px;
+  padding: 5px;
+  float: none;
+  text-align: justify;
+}
+
+#linkedin_API{
+  position: relative;
+  border: solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+  width: 70%;
+  height: 180px;
+  right: auto;
+}
 
 /*footer style*/
 #footer{

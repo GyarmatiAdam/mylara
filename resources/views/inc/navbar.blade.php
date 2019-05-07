@@ -66,7 +66,7 @@
             @endguest
         </ul>
 
-<!-- search engine displayed here-->
+<!-- search box displayed here-->
                 @include('search.searching')
          </div>
 </nav>
