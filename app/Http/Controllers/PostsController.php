@@ -113,7 +113,7 @@ class PostsController extends Controller
         //Check for correct user
         //if it is not equal to user id, than redirect to post, with an error message
         if(auth()->user()->id !==$post->user_id){
-            return redirect('/mylara/public/posts')->with('error', 'Unauthorized page');
+            return redirect('/posts')->with('error', 'Unauthorized page');
         }
 
         return view('posts.edit')->with('post', $post);
@@ -173,7 +173,7 @@ class PostsController extends Controller
         $post = Post::find($id);
             //prevent for users to delete other users posts
         if(auth()->user()->id !==$post->user_id){
-            return redirect('/mylara/public/posts')->with('error', 'Unauthorized page');
+            return redirect('/posts')->with('error', 'Unauthorized page');
         }
             //if the cover img not equal to noimage, than delet image
         if($post->cover_image != 'noimage.jpg'){
