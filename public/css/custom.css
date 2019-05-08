@@ -172,11 +172,10 @@ p{
 
 #linkedin_API{
   position: absolute;
-  border: solid black;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 5px;
-  width: 38%;
+  width: 28%;
   height: 180px;
   right: 0;
 }
@@ -472,6 +471,7 @@ p{
     -ms-transform: translate(-50%, -50%);
   }
 
+
 /*My projects inhalt*/
   .project_embed{
     position: relative;
@@ -596,13 +596,10 @@ p{
 
 #linkedin_API{
   position: relative;
-  border: solid black;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 5px;
-  width: 70%;
-  height: 180px;
-  right: auto;
+  margin-bottom: 20px;
+  max-width: 40%;
 }
 
 /*footer style*/
