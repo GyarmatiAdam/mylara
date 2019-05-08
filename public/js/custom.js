@@ -1,11 +1,11 @@
-/*Loading page*/
+/*Loading page
 window.addEventListener("load", function() {
     var load_screen = document.getElementById("load_screen");
     var body = document.getElementById("body");
       body.removeChild(load_screen);
-});
+});*/
 
-/*footer hide on scroll*/
+/*footer hide on scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -14,10 +14,10 @@ function scrollFunction() {
   } else {
     document.getElementById("footer").style.visibility = "visible";
   }
-}
+}*/
 
 
-/* Welcome-page image handler */
+/* Welcome-page image handler 
 const container = document.querySelector('.wp_images');
 
 let counter = 0;
@@ -33,4 +33,4 @@ function auto(){
   }
 }
 
-setInterval(auto, 3000);
+setInterval(auto, 3000);*/
