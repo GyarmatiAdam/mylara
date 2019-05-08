@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                                 <div id="wp_text_end">
-                                    <p>Please take your time,t importantly... have fun!</p>
+                                    <p>If you have any concerns, please do not hesitate to contact me.</p>
                                 </div>                                        
                     </div>
                     <div class="col-md-1">                    
