@@ -1,7 +1,8 @@
 /*Loading page*/
 window.addEventListener("load", function() {
     var load_screen = document.getElementById("load_screen");
-    document.body.removeChild(load_screen);
+    var body = document.getElementById("body");
+      body.removeChild(load_screen);
 });
 
 /*footer hide on scroll*/

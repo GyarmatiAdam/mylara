@@ -65,7 +65,8 @@ p{
 /*large social media buttons zoomed and moved*/
 .social_group{
   position: fixed;
-  left: 20px;
+  left: 10px;
+  top: 70px;
 }
 .btn-social-icon.btn-lg{
     transition: 1s;
