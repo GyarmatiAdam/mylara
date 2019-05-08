@@ -26,6 +26,13 @@ p{
   padding-top: 4px;
 }
 
+/* alert messages */
+.alert-success{
+  display: block;
+  margin: auto;
+  max-width: 200px;
+}
+
 /*myproject page button and card style*/
 #toggledown{
   margin:2% 44% 5%;
