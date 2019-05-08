@@ -19,7 +19,7 @@
                         @include('inc.socialmedia')
                     </div>
                     <div class="col-md-8">
-                        <div class="wp_images"></div>
+                        <div id="wp_images"></div>
                         <img src={{ asset('images/img-0.jpg') }} class="hidden wpsmall_img">  
                         <div id="wp_text">
                             <h3>Welcome</h3>

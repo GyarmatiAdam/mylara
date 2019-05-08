@@ -17,15 +17,32 @@ function scrollFunction() {
 }
 
 
-/* Welcome-page image handler */
-const container = document.querySelector('.wp_images');
+/* Welcome-page image handler 
+constdocument.getElementById(wp_images) = document.querySelector('.wp_images');
 
 let counter = 0;
 
 function auto(){
   counter++;
-  container.style.backgroundImage = `url(images/img-${counter}.JPG)`;
-  container.animate([{opacity:'0.1'}, {opacity:'0.3'}, {opacity:'0.6'}, {opacity:'1'}], {duration: 1000, fill: 'forwards'});
+ document.getElementById(wp_images).style.backgroundImage = `url(images/img-${counter}.jpg)`;
+ document.getElementById(wp_images).animate([{opacity:'0.1'}, {opacity:'0.3'}, {opacity:'0.6'}, {opacity:'1'}], {duration: 1000, fill: 'forwards'});
+
+
+  if(counter === 8){
+    counter = -1;
+  }
+}
+
+setInterval(auto, 3000);*/
+
+
+
+let counter = 0;
+
+function auto(){
+  counter++;
+ document.getElementById('wp_images').style.backgroundImage = `url(images/img-${counter}.jpg)`;
+ document.getElementById('wp_images').animate([{opacity:'0.1'}, {opacity:'0.3'}, {opacity:'0.6'}, {opacity:'1'}], {duration: 1000, fill: 'forwards'});
 
 
   if(counter === 8){

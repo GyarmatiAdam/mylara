@@ -114,7 +114,7 @@ p{
 
 
 /*welcome page style*/
-.wp_images{
+#wp_images{
   background-image: url('/images/img-0.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -341,7 +341,7 @@ p{
 
   
   /*welcome page style*/
-  .wp_images{
+  #wp_images{
     flex: 0 0 100%;
     min-height: 30vh;
   }
@@ -555,7 +555,7 @@ p{
   }
 
 /* Welcome page images */
-  .wp_images{
+  #wp_images{
     display: none;
   }
   .wpsmall_img{
