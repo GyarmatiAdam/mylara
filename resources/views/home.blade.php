@@ -17,7 +17,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                            <a href="/mylara/public/posts/create" class="btn btn-primary">Create Post</a>
+                            <a href="/posts/create" class="btn btn-primary">Create Post</a>
                             <h3>Your Blog Post</h3>
                     @if (count($posts) > 0)
                             <table class="table table-striped">
@@ -29,7 +29,7 @@
                                 @foreach ($posts as $post)
                                     <tr>
                                         <td>{{$post->title}}</td>
-                                        <td><a href="/mylara/public/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a></td>
+                                        <td><a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a></td>
                                         <td>
                                                 {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
                                                 {{Form::hidden('_method', 'DELETE')}}

@@ -87,8 +87,8 @@
                     </div>
                     <div class="col-md-1">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">
-                            <a class="btn btn-primary btn-sm" href="/mylara/public/login" role="button">Login</a>
-                            <a class="btn btn-success btn-sm" href="/mylara/public/register" role="button">Register</a>
+                            <a class="btn btn-primary btn-sm" href="/login" role="button">Login</a>
+                            <a class="btn btn-success btn-sm" href="/register" role="button">Register</a>
                         </div>
                             
                     </div>
