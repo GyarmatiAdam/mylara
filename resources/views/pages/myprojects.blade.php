@@ -8,10 +8,10 @@
                                 </div>
                                 <div class="col-md-6">
                                         <h1>My <small>Projects</small></h1>
-                                        <p>You can find all of my projects at this page.</p>
-                                        <p>You can find out the name and the program leanguages by moving your mouse over the images.</p>
-                                        <p>By clicking on them, will drive you to the actual website, where you can see the source-code and try the functionality.</p>
-                                        <p>For description click on  <button class="fa_plus btn btn-primary" type="button" data-toggle="collapse" aria-expanded="false"><i class="fa fa-plus" aria-hidden="true"></i></button>  buttons under the projects.</p>
+                                        <p>All of my projects are collected on this page.</p>
+                                        <p>You can find out the name and the program leanguage by moving your mouse over the images.</p>
+                                        <p>Clicking on them will drive you to the actual website, where you can see the source-code and try the functionality.</p>
+                                        <p>For description click on  <button class="fa_plus btn btn-primary" type="button" data-toggle="collapse" aria-expanded="false"><i class="fa fa-plus" aria-hidden="true"></i></button>  button under each project.</p>
                                         <div class="project_embed">
                                                 <a target="_blank" href="http://adam.ezyro.com/">
                                                 <img src={{ asset('images/Github_finder.jpg') }} class="projectimg img-fluid" alt="Responsive image">

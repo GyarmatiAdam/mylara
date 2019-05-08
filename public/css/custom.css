@@ -166,6 +166,9 @@ p{
   float: left;
   text-align: justify;
 }
+.wp_collapse:hover{
+  background-color: #18bb5c;
+}
 
 #linkedin_API{
   position: absolute;
