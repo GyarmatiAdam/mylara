@@ -14,19 +14,19 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="/mylara/public/about">About me <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/public/about">About me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/mylara/public/myprojects">My Projects <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/public/myprojects">My Projects <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/mylara/public/posts">Blog <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/public/posts">Blog <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/mylara/public/posts/create">Write Post <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/public/posts/create">Write Post <span class="sr-only">(current)</span></a>
             </li>
             <li class="hidden nav-item active">
-                <a class="nav-link" href="/mylara/public/contact">Contact <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/public/contact">Contact <span class="sr-only">(current)</span></a>
             </li>
           </ul>
 
@@ -48,7 +48,7 @@
                                 {{ Auth::user()->name }}
                             </a>
                         <li class="nav-link">
-                            <a title="Edit" class="btn btn-sm btn-outline-light" href="/mylara/public/home">&#x270E;
+                            <a title="Edit" class="btn btn-sm btn-outline-light" href="/public/home">&#x270E;
                             </a>
                         </li>
 

@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                                 <div id="wp_text_end">
-                                    <p>Please take your time, check every page, register, write to my bolg, but most importantly... have fun!</p>
+                                    <p>Please take your time,t importantly... have fun!</p>
                                 </div>                                        
                     </div>
                     <div class="col-md-1">                    
