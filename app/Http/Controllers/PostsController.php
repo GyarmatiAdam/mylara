@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Storage;//find in laravel documentation
+use Illuminate\Support\Facades\Storage;
 use App\Post;
 use DB;
 
@@ -17,7 +17,7 @@ class PostsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'show']]);//added an exception wit an array
+        $this->middleware('auth', ['except' => ['index', 'show']]);//added an exception
     }
 
 
@@ -70,7 +70,7 @@ class PostsController extends Controller
             //Filename to Store ...it stores name and time and an extension(to make file unique)
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image...create a folder and saves file there(run ->artisan storage:link)
-            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
         }
         else{
             $fileNameToStore = 'noimage.jpg';//if user do not upload image, uses that default to display
@@ -145,7 +145,7 @@ class PostsController extends Controller
             //Filename to Store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image
-            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
         }
 
         //create Post
@@ -178,7 +178,7 @@ class PostsController extends Controller
             //if the cover img not equal to noimage, than delet image
         if($post->cover_image != 'noimage.jpg'){
             //Delete image
-            Storage::delete('public/cover_images/'.$post->cover_image);
+            Storage::delete('/cover_images'.$post->cover_image);
         }
 
         $post->delete();
