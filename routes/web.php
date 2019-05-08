@@ -15,7 +15,7 @@ Route::get('/', 'PagesController@index');
 
 Route::get('/about', 'PagesController@about');
 
-Route::resource('posts', 'PostsController');
+Route::resource('/posts', 'PostsController');
 
 Auth::routes();
 
@@ -27,5 +27,3 @@ Route::post('/result', 'SearchController@usersearch');
 
 Route::get('/contact', 'PagesController@contact');
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
