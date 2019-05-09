@@ -1,9 +1,12 @@
 /*Loading page*/
+if (top.location.pathname === '/'){
+  
 window.addEventListener("load", function() {
     var load_screen = document.getElementById("load_screen");
     var body = document.getElementById("body");
       body.removeChild(load_screen);
 });
+}
 
 /*footer hide on scroll*/
 window.onscroll = function() {scrollFunction()};
@@ -19,11 +22,7 @@ function scrollFunction() {
 
 /* Welcome-page image handler */
 
-
-
-
-
-if (top.location.pathname === '/')
+if (top.location.pathname === '/') //prevent to load on other page
 {
     
 let counter = 0;
