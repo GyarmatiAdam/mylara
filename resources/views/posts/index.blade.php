@@ -3,7 +3,7 @@
 @section('bodysection')
             <div class="container">
                 <div class="row">
-                        <div class="col-md-4"><!--displays uploaded images...or noimage.jpg-->
+                        <div class="col-md-4">
                             @include('inc.socialmedia')
                         </div>
 
@@ -18,7 +18,7 @@
                                 <div id="post_index">
                                         <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
                                     <div>
-                                        <img style="width:10%; height:10%" src="/storage/app/public/cover_images/{{$post->cover_image}}" alt="">
+                                        <img style="width:10%; height:10%" src="/cover_images/{{$post->cover_image}}" alt="">
                                     </div>                                           
                                     <div class="post_details">
                                         <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
