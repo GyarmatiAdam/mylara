@@ -26,6 +26,10 @@ p{
   padding-top: 4px;
 }
 
+#favicon:hover{
+  transform: scale(2);
+}
+
 /* alert messages */
 .alert{
   display: block;
