@@ -21,6 +21,7 @@
         <link href="{{ asset('css/bootstrap-social.css') }}" rel="stylesheet">
         <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
         
+        <img src={{ asset('images/img-0.jpg') }} title="Portfolio" sizes="16x16">  
 
     </head>
     <header>
