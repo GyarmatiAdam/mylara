@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<body>
+
 <div class="container">
     <h1>Register now</h1>
     <p>If you are not registered yet, you can simply fill out the form below and you are ready to go!</p>
@@ -85,5 +85,5 @@
         </div>
     </div>
 </div> 
-</body>
+
 @endsection

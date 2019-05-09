@@ -6,7 +6,7 @@
         </head>
     @endsection
     @section('bodysection')
-        <body id="body">
+        <div id="body">
             <!--loading screen-->
             <div id="load_screen">
                 <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
@@ -94,5 +94,5 @@
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     @endsection

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
-    <body>
+@section('bodysection')
     <div class="container">
         <h1>Edit post</h1>
         <p>You can modify or delete your post here.</p>
@@ -37,5 +36,4 @@
             </div>
         </div>
     </div>
-    </body>
 @endsection

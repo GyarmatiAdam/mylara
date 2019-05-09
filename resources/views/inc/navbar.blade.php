@@ -68,7 +68,7 @@
 
 <!-- search box displayed here-->
                 @include('search.searching')
-         </div>
+
 </nav>
 </div>
 </header>

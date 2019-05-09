@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<body>
+
 <div class="container">
     <h1>Login</h1>
     <p>If you are already registered, please write your email and password below.</p>
@@ -80,5 +80,5 @@
         </div>
     </div>
 </div>
-</body>
+
 @endsection

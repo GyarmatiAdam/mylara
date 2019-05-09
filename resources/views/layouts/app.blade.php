@@ -28,7 +28,7 @@
         @include('inc.navbar')
     </header>
     <body>
-
+        
         @include('inc.messages')
         @yield('content')
         @yield('bodysection')
@@ -39,7 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
     </body>
-    <footer class="">
+
         @include('inc.footer')
-    </footer>
+
 </html>

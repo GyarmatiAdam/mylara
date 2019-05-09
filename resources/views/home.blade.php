@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('content')
-<body>
+@section('bodysection')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-2">
@@ -19,7 +19,7 @@
                     @endif
                             <a href="/posts/create" class="btn btn-primary">Create Post</a>
                             <h3>Your Blog Post</h3>
-                    @if (count($posts) > 0)
+                    @if (isset($posts) && $posts->any())
                             <table class="table table-striped">
                                     <tr>
                                         <th>Title</th>
@@ -50,5 +50,5 @@
         </div>
     </div>
 </div>
-</body>
 @endsection
+
