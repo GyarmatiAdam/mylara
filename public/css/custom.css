@@ -27,7 +27,7 @@ p{
 }
 
 /* alert messages */
-.alert-success{
+.alert{
   display: block;
   margin: auto;
   max-width: 200px;
@@ -246,7 +246,7 @@ p{
 
 /*loading screen -> loads before index page*/
 #load_screen{
-  opacity: 1;
+  opacity: 0.8;
   position: fixed;
   left: 50%;
   top: 50%;
