@@ -37369,7 +37369,7 @@ var config = ({
   /**
    * Show production mode tip message on boot?
    */
-  productionTip: "development" !== 'production',
+  productionTip: false,
 
   /**
    * Whether to enable devtools
