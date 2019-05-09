@@ -33,8 +33,7 @@
         @yield('content')
         @yield('bodysection')
 
-                <!-- Scripts 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.9/dist/vue.js"></script>-->
+                <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/custom.js') }}" defer></script>
 
