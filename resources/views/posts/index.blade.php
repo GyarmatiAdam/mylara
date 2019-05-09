@@ -13,7 +13,7 @@
                             <p>You can see the latest posts here.</p>
                             <p>If you want to find an older post, you can click on pagination at the bottom.</p>
                             </div>
-                            @if (count($posts) > 0)
+                            @if (isset($posts) && $posts->any())
                                 @foreach ($posts as $post)
                                 <div id="post_index">
                                         <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
