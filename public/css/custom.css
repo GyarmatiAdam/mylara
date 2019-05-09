@@ -31,6 +31,7 @@ p{
   display: block;
   margin: auto;
   max-width: 200px;
+  z-index: 99;
 }
 
 /*myproject page button and card style*/

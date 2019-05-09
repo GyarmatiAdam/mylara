@@ -144,7 +144,7 @@ class PostsController extends Controller
             //Filename to Store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image
-            $path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/storage/cover_images', $fileNameToStore);
         }
 
         //create Post
@@ -177,7 +177,7 @@ class PostsController extends Controller
             //if the cover img not equal to noimage, than delet image
         if($post->cover_image != 'noimage.jpg'){
             //Delete image
-            Storage::delete('/cover_images'.$post->cover_image);
+            Storage::delete('/storage/cover_images'.$post->cover_image);
         }
 
         $post->delete();
