@@ -17,26 +17,15 @@ function scrollFunction() {
 }
 
 
-/* Welcome-page image handler 
-constdocument.getElementById(wp_images) = document.querySelector('.wp_images');
-
-let counter = 0;
-
-function auto(){
-  counter++;
- document.getElementById(wp_images).style.backgroundImage = `url(images/img-${counter}.jpg)`;
- document.getElementById(wp_images).animate([{opacity:'0.1'}, {opacity:'0.3'}, {opacity:'0.6'}, {opacity:'1'}], {duration: 1000, fill: 'forwards'});
-
-
-  if(counter === 8){
-    counter = -1;
-  }
-}
-
-setInterval(auto, 3000);*/
+/* Welcome-page image handler */
 
 
 
+
+
+if (top.location.pathname === '/')
+{
+    
 let counter = 0;
 
 function auto(){
@@ -51,3 +40,4 @@ function auto(){
 }
 
 setInterval(auto, 3000);
+}
