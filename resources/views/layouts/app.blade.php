@@ -20,7 +20,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap-social.css') }}" rel="stylesheet">
         <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-        <link rel="shortcut icon" sizes="16x16" href="/images/img-o.jpg" />
+        <link rel="shortcut icon" sizes="16x16" href="/images/img-0.jpg" />
     </head>
     <header>
         @yield('headsection')
