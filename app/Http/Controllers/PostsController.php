@@ -69,7 +69,7 @@ class PostsController extends Controller
             //Filename to Store ...it stores name and time and an extension(to make file unique)
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image...create a folder and saves file there(run ->artisan storage:link)
-            $path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/storage/cover_images', $fileNameToStore);
         }
         else{
             $fileNameToStore = 'noimage.jpg';//if user do not upload image, uses that default to display
