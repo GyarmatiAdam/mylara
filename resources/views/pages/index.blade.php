@@ -2,6 +2,7 @@
     ||(view folder)so only the content has to be changed-->
     @section('headsection')
         <head>
+            <link rel="icon" href="images/img-0.jpg" type="image/gif" sizes="16x16">
             <!--<h1>{{$title}}</h1>$title take place in PagesController it is good for an often used content-->
         </head>
     @endsection
