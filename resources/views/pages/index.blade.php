@@ -34,7 +34,7 @@
                         </div>
                             <div class="row">
                                 <div id="linkedin_API">
-                                        <img src={{ asset('images/adam.jpg') }} class="img-fluid" alt="Responsive image">
+                                    <!--linledin api-->
                                 </div>
                             </div>  
                             <div class="container">
