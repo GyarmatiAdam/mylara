@@ -12,24 +12,27 @@
                                 <h1>About <small>me</small></h1>
                                 <img src={{ asset('images/aboutme.jpg') }} class="about_img img-fluid" alt="Responsive image">
                                 <div class="about_text text-justify">                       
-                                        <p>My name is Adam…Adam Gyarmati.</p>
-                                        <p>No, it is not like James Bond, because I am not a secret agent. 
-                                                I do not even kill people. The only business I have with this theme, 
-                                                is that I really like Bond movies!</p>
-                                        <p>Actually, I like all kinds of movies; just as sport in general, 
-                                                friends but the most I love is my Wife and my Family.</p>
-                                        <p>In the winter of 2018 I decided to start a new 
-                                                career – following the example of my friend – in web-development. 
-                                                And now, couple of months and courses later here I am, writing my 
-                                                own website’s ‘About me’ page. Hopefully, I will become a useful 
-                                                member of an amazing developer team. Actually, it is not a hope: 
-                                                only a matter of time and hard work.</p>
-                                        <p>At the beginning, coding just seemed an interesting thing but as 
-                                                I have immersed myself in this topic, it became love. Love, 
-                                                which I wake up and go to sleep with. It amases me, what CSS is capable of 
-                                                ; what Javascript can do with a simple HTML file; how PHP cooperates with an 
-                                                SQL database. And the funny thing is, that I still haven’t seen much of it. 
-                                                Let’s do it then!</p>
+                                        <h5>Hi, my name is Adam</h5>
+                                        <p>I was born and raised in the beautiful Hungary. I spent my childhood
+                                                in a really small village, where all the people know each other. 
+                                                Since i stood up, i am playing football, handball, basketball, 
+                                                actually all kind of teamsport. Until today, i make all excerises 
+                                                with enthusiasm and fun. I also love watching movies and reading.</p>
+                                        <p>My kindergarden and primary school where in the neighborhood, 
+                                                just about a walking distance. Maybe that is the real reason, 
+                                                why i left my country after Uni.</p>
+                                        <p>I always wanted to live in a big city, with a bubbly day and nightlife. 
+                                                My friends where living in London by that time, so the decision was 
+                                                quiet easy. We moved there with my girlfriend - who by the way became 
+                                                my wife - and spent an amazing five years. Because we were far away 
+                                                from home, of course we missed our family so much, that we made a commitment 
+                                                to move closer to Hungary. From the point of that, Vienna was the 
+                                                perfect place.</p>
+                                        <p>Two years now since we are settled here, and i have to say: we love it! 
+                                                We have new and old friends here, and we can see our family whenever 
+                                                we want. Therefor i am looking for new connections, building a new 
+                                                carrere and living a beautiful life here.</p>
+                                        
                                 </div>
                         </div>
                         <div class="col-md-1">

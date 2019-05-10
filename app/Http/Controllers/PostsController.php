@@ -1,13 +1,10 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Storage;//find in laravel documentation
 use App\Post;
 use DB;
-
 class PostsController extends Controller
 {
      /**
@@ -17,10 +14,8 @@ class PostsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'show']]);//added an exception
+        $this->middleware('auth', ['except' => ['index', 'show']]);//added an exception wit an array
     }
-
-
     /**
      * Display a listing of the resource.
      *
@@ -28,11 +23,10 @@ class PostsController extends Controller
      */
     public function index()
     {
-    //organise the Posts by created_at(date) and add pagination(every page has 10 posts)
-        $posts = Post::orderBy('created_at', 'DESC')->paginate(10);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+       //organise the Posts by created_at(date) and add pagination(every page has 10 posts)
         return view('posts.index')->with('posts', $posts);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -42,7 +36,6 @@ class PostsController extends Controller
     {
         return view('posts.create');
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -51,13 +44,11 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-
         $this->validate($request, [
             'title' => 'required',
             'body' => 'required',
             'cover_image' => 'image|nullable|max:1999' //the file has to be an image|validated after upload|less than 2 MB(because often thats Apache server limitation)
         ]);
-
         //Handle File Upload...checks if the user clicked on button and selected file to upload
         if($request->hasFile('cover_image')){
             //Get filename with the extension...will put the actual file name what was uploaded
@@ -69,12 +60,11 @@ class PostsController extends Controller
             //Filename to Store ...it stores name and time and an extension(to make file unique)
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image...create a folder and saves file there(run ->artisan storage:link)
-            $path = $request->file('cover_image')->storeAs('/images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
         }
         else{
             $fileNameToStore = 'noimage.jpg';//if user do not upload image, uses that default to display
         }
-
         //create Post
         $post = new Post;
         $post->title = $request->input('title');
@@ -82,10 +72,8 @@ class PostsController extends Controller
         $post->user_id = auth()->user()->id;//authenticate the access to user_id//||get currently logged in user and put it into user_id
         $post->cover_image = $fileNameToStore;//either posts image or noimage.jpg
         $post->save();                         
-
         return redirect('/posts')->with('success', 'Post Created');
     }
-
     /**
      * Display the specified resource.
      *
@@ -97,7 +85,6 @@ class PostsController extends Controller
         $post = Post::find($id);
         return view('posts.show')->with('post', $post);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -106,18 +93,14 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-
         $post = Post::find($id);
-
         //Check for correct user
         //if it is not equal to user id, than redirect to post, with an error message
         if(auth()->user()->id !==$post->user_id){
             return redirect('/posts')->with('error', 'Unauthorized page');
         }
-
         return view('posts.edit')->with('post', $post);
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -132,7 +115,6 @@ class PostsController extends Controller
             'title' => 'required',
             'body' => 'required'
         ]);
-
          //Handle File Upload
          if($request->hasFile('cover_image')){
             //Get filename with the extension
@@ -144,9 +126,8 @@ class PostsController extends Controller
             //Filename to Store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image
-            $path = $request->file('cover_image')->storeAs('/images', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
         }
-
         //create Post
         $post = Post::find($id);//does not create a new post, but find the edited
         $post->title = $request->input('title');
@@ -154,13 +135,9 @@ class PostsController extends Controller
         if($request->hasFile('cover_image')){
             $post->cover_image = $fileNameToStore;// let change the image
         }
-
         $post->save();
-
         return redirect('/posts')->with('success', 'Post Updated');
-
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -177,11 +154,9 @@ class PostsController extends Controller
             //if the cover img not equal to noimage, than delet image
         if($post->cover_image != 'noimage.jpg'){
             //Delete image
-            Storage::delete('/images'.$post->cover_image);
+            Storage::delete('/cover_images'.$post->cover_image);
         }
-
         $post->delete();
         return redirect('/posts')->with('success', 'Post Removed');
-
     }
 }
