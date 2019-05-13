@@ -188,6 +188,12 @@ p{
   height: 180px;
   right: 0;
 }
+
+#embed_cv{
+  width: 800px;
+  height: 1150px;
+}
+
 /*hidden elements, only display on small screen*/
 .hidden{
   display: none;

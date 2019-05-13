@@ -85,8 +85,9 @@
                                 </div>
                             </div>
                                 <div id="wp_text_end">
-                                    <p>If you have any concerns, please do not hesitate to contact me.</p>
-                                </div>                                        
+                                    <p>Please find my latest resume below.</p>
+                                </div>
+                                <embed id="embed_cv" src={{ asset('images/pdf/CV_Adam_Gyarmati.pdf') }} />                                        
                     </div>
                     <div class="col-md-1">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">
