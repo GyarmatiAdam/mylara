@@ -27,12 +27,13 @@
                             <p>You will find here all the important information about me and my work.
                                 To find out more about my projects, you can visit my GitHub account or simply go to the My projects 
                                 page and take a look on them.</p>
-                                <p>Should you cantact me?...Then find my mobile number and email adresse just on the left side. 
-                                Feel free to get in touch with me, especially if you are hiring Entry-level junior web developers.
-                                Of course as a jobseeker, I also have Stack-Overflow and Linkedin accounts,
-                                where you may find additional information.</p>
+                                <p>Should you cantact me?...Then find my mobile number and email adresse also here. 
+                                Feel free to get in touch with me, especially if you are hiring Entry-level junior Web Developers.  
+                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                </p>
                                 <br>
-                                <p>For the questions about my new career, you will find an answer below.</p>
+                                <p>When and why did i get here? What and how do i want to achieve my goals? 
+                                    Read further and you will find an answer just below.</p>
                         </div>
                             <div class="row">
                                 <div id="linkedin_API">
@@ -79,14 +80,16 @@
                                     <div>My ultimate goal is to become a professional web developer. As I do programming 
                                         every day and I have been trying out new tools and applications, 
                                         I feel that I'm ready to take an entry-level position. I am eager to join a 
-                                     company, were I could be part of a bubbly and 
+                                        company, were I could be part of a bubbly and 
                                         professional team, and where I would have the chance to further educate myself.
                                     </div>
                                 </div>
                             </div>
                         <div id="wp_text_end">
-                                <p>Please find my latest resume here:</p>
-                                <i title="Adam Gyarmati CV" id="fa-file" class="fa fa-file" aria-hidden="true" type="button" data-toggle="collapse" data-target="#collapsablecv" aria-expanded="false" aria-controls="collapseExample"></i>
+                                <p>To see my latest resume, just click on the icon here:</p>
+                                <br>
+                                <i title="Adam Gyarmati CV" id="fa-file" class="fa fa-file" aria-hidden="true" data-toggle="collapse" data-target="#collapsablecv" aria-expanded="false" aria-controls="collapseExample"></i>
+                                <br>
                             <div class="collapse" id="collapsablecv">
                                 <embed id="embed_cv" class="img-fluid" src={{ asset('images/pdf/CV_Adam_Gyarmati.pdf') }} />
                             </div> 
