@@ -198,6 +198,10 @@ p{
   width: 500px;
 }
 
+#fa-file{
+  text-align: center;
+}
+
 #fa-file:hover{
   color: green;
 }
