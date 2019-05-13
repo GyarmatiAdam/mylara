@@ -61,7 +61,7 @@ class PostsController extends Controller
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image...create a folder and saves file there(run ->artisan storage:link)
             //$path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
-            $path = base_path().'/storage/cover_images/' . $fileNameToStore;
+            $path = base_path().'cover_images/' . $fileNameToStore;
             Image::make($filenameWithExt)->resize(950, 700)->save($path);
         }
         else{
