@@ -128,7 +128,10 @@ class PostsController extends Controller
             //Filename to Store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image
-            $path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
+            //$path = $request->file('cover_image')->storeAs('/cover_images', $fileNameToStore);
+            $path = base_path().'cover_images/' . $fileNameToStore;
+            Image::make($filenameWithExt)->resize(950, 700)->save($path);
+
         }
         //create Post
         $post = Post::find($id);//does not create a new post, but find the edited
