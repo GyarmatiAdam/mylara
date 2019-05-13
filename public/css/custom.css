@@ -191,9 +191,13 @@ p{
 
 /* CV style */
 #embed_cv{
-height: 700px;
-width: 500px;
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 700px;
+  width: 500px;
 }
+
 #fa-file:hover{
   color: green;
 }

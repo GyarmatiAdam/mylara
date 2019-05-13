@@ -84,12 +84,13 @@
                                     </div>
                                 </div>
                             </div>
-                                <div id="wp_text_end">
-                                        <p>Please find my latest resume here:</p>
-                                
-                                <!--<button title="Adam Gyarmati CV" id="fa-file" type="button"><i class="fa fa-file" aria-hidden="true"></i></button>-->
+                        <div id="wp_text_end">
+                                <p>Please find my latest resume here:</p>
+                                <i title="Adam Gyarmati CV" id="fa-file" class="fa fa-file" aria-hidden="true" type="button" data-toggle="collapse" data-target="#collapsablecv" aria-expanded="false" aria-controls="collapseExample"></i>
+                            <div class="collapse" id="collapsablecv">
                                 <embed id="embed_cv" class="img-fluid" src={{ asset('images/pdf/CV_Adam_Gyarmati.pdf') }} />
-                            </div>                               
+                            </div> 
+                        </div>                               
                     </div>
                     <div class="col-md-1">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">

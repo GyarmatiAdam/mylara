@@ -40,16 +40,3 @@ function auto(){
 
 setInterval(auto, 3000);
 }
-
-/*CV collapse on click
-
-document.getElementById("fa-file").addEventListener("click", cvFunction);
-    function cvFunction(){
-      if(){
-      document.getElementById("embed_cv").style.visibility = "visible";
-      }
-      else{
-      document.getElementById("embed_cv").style.visibility = "hidden";
-      }
-    };
-*/
