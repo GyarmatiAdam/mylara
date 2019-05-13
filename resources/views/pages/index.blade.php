@@ -88,7 +88,7 @@
                         <div id="wp_text_end">
                                 <p>To see my latest resume, just click on the icon here:</p>
                                 <br>
-                                <i title="Adam Gyarmati CV" id="fa-file" role="button" class="fa fa-file" aria-hidden="true" data-toggle="collapse" data-target="#collapsablecv" aria-expanded="false" aria-controls="collapseExample"></i>
+                                <i title="Adam Gyarmati CV" id="fa-file" type="submit" class="fa fa-file" aria-hidden="true" data-toggle="collapse" data-target="#collapsablecv" aria-expanded="false" aria-controls="collapseExample"></i>
                                 <br>
                             <div class="collapse" id="collapsablecv">
                                 <embed id="embed_cv" class="img-fluid" src={{ asset('images/pdf/CV_Adam_Gyarmati.pdf') }} />
