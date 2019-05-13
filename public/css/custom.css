@@ -562,6 +562,13 @@ p{
     margin: 10px;
   }
 
+/*loading screen -> loads before index page*/
+  #load_screen{
+    left: none;
+    top: none;
+    margin: auto;
+  }
+
 /* Welcome page images */
   #wp_images{
     display: none;

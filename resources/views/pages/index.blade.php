@@ -31,10 +31,13 @@
                                 Feel free to get in touch with me, especially if you are hiring Entry-level junior web developers.
                                 Of course as a jobseeker, I also have Stack-Overflow and Linkedin accounts,
                                 where you may find additional information.</p>
+                                <br>
+                                <p>For the questions about my new career, you will find an answer below.</p>
                         </div>
                             <div class="row">
                                 <div id="linkedin_API">
-                                    <!--linledin api-->
+                                    <!--here will be linledin api-->
+                                    <img src={{ asset('images/adam.jpg') }} class="about_img img-fluid" alt="Responsive image">
                                 </div>
                             </div>  
                             <div class="container">
