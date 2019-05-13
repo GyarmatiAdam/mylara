@@ -59,10 +59,9 @@ class PostsController extends Controller
             $extension = $request->file('cover_image')->getClientOriginalExtension();
             //Filename to Store ...it stores name and time and an extension(to make file unique)
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
-            //Upload Image...create a folder and saves file there(run ->artisan storage:link)
-            //$path = $request->file('cover_image')->storeAs('images/', $fileNameToStore);
-            $path = base_path().'images/' . $fileNameToStore;
-            Image::make($filenameWithExt)->save($path);
+            //Upload Image...create a folder and saves file there
+            $path = $request->file('cover_image')->storeAs('images/', $fileNameToStore);
+
 
         }
         else{
@@ -129,9 +128,8 @@ class PostsController extends Controller
             //Filename to Store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image
-            //$path = $request->file('cover_image')->storeAs('images/', $fileNameToStore);
-            $path = base_path().'images/' . $fileNameToStore;
-            Image::make($filenameWithExt)->save($path);
+            $path = $request->file('cover_image')->storeAs('images/', $fileNameToStore);
+ 
 
 
         }
