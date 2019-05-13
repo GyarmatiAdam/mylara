@@ -11,7 +11,7 @@
 
             <div class="col-md-7">               
                 <h2>{{$post->title}}</h2>
-                <img style="width:40%" src="/storage/app/public/{{$post->cover_image}}" alt="">
+                <img style="width:40%" src="/{{$post->cover_image}}" alt="">
                 <div>
                     {{$post->body}}
                 </div>
