@@ -85,9 +85,11 @@
                                 </div>
                             </div>
                                 <div id="wp_text_end">
-                                    <p>Please find my latest resume below.</p>
-                                </div>
-                                <embed id="embed_cv" src={{ asset('images/pdf/CV_Adam_Gyarmati.pdf') }} />                                        
+                                        <p>Please find my latest resume here:</p>
+                                
+                                <!--<button title="Adam Gyarmati CV" id="fa-file" type="button"><i class="fa fa-file" aria-hidden="true"></i></button>-->
+                                <embed id="embed_cv" class="img-fluid" src={{ asset('images/pdf/CV_Adam_Gyarmati.pdf') }} />
+                            </div>                               
                     </div>
                     <div class="col-md-1">                    
                         <div class="logbtn mb-xl-5 float-right d-none d-lg-block">

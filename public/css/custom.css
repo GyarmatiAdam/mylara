@@ -189,9 +189,13 @@ p{
   right: 0;
 }
 
+/* CV style */
 #embed_cv{
-  width: 800px;
-  height: 1150px;
+height: 750px;
+width: 500px;
+}
+#fa-file:hover{
+  color: green;
 }
 
 /*hidden elements, only display on small screen*/
@@ -360,6 +364,12 @@ p{
     min-height: 30vh;
   }
 
+  /* CV style */
+  #embed_cv{
+    height: 550px;
+    width: 400px;
+    }
+
 
 /*My projects inhalt*/
   .project_embed{
@@ -485,6 +495,12 @@ p{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+
+    /* CV style */
+    #embed_cv{
+      height: 550px;
+      width: 500px;
+      }
 
 
 /*My projects inhalt*/
@@ -622,6 +638,12 @@ p{
   margin-bottom: 20px;
   max-width: 40%;
 }
+
+/*CV style*/
+#embed_cv{
+  height: 480px;
+  width: 300px;
+  }
 
 /*footer style*/
 #footer{

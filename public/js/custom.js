@@ -1,6 +1,6 @@
-/*Loading page*/
+  /*Loading page*/
 if (top.location.pathname === '/'){
-  
+
 window.addEventListener("load", function() {
     var load_screen = document.getElementById("load_screen");
     var body = document.getElementById("body");
@@ -40,3 +40,16 @@ function auto(){
 
 setInterval(auto, 3000);
 }
+
+/*CV collapse on click
+
+document.getElementById("fa-file").addEventListener("click", cvFunction);
+    function cvFunction(){
+      if(){
+      document.getElementById("embed_cv").style.visibility = "visible";
+      }
+      else{
+      document.getElementById("embed_cv").style.visibility = "hidden";
+      }
+    };
+*/
