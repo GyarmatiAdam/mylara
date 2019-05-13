@@ -564,8 +564,7 @@ p{
 
 /*loading screen -> loads before index page*/
   #load_screen{
-    left: none;
-    top: none;
+    left: 40%;
     margin: auto;
   }
 
