@@ -60,7 +60,7 @@ class PostsController extends Controller
             //Filename to Store ...it stores name and time and an extension(to make file unique)
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image...create a folder and saves file there(run ->artisan storage:link)
-            $path = $request->file('cover_image')->storeAs('cover_images/', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('images/', $fileNameToStore);
 
         }
         else{
@@ -127,7 +127,7 @@ class PostsController extends Controller
             //Filename to Store
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
             //Upload Image
-            $path = $request->file('cover_image')->storeAs('cover_images/', $fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('images/', $fileNameToStore);
 
 
         }
@@ -157,7 +157,7 @@ class PostsController extends Controller
             //if the cover img not equal to noimage, than delet image
         if($post->cover_image != 'noimage.jpg'){
             //Delete image
-            Storage::delete('/cover_images'.$post->cover_image);
+            Storage::delete('/images'.$post->cover_image);
         }
         $post->delete();
         return redirect('/posts')->with('success', 'Post Removed');
