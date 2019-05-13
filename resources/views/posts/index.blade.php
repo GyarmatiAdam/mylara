@@ -17,7 +17,7 @@
                                 <div id="post_index">
                                         <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
                                     <div>
-                                        <img style="width:10%; height:10%" src="/storage/{{$post->cover_image}}" alt="">
+                                        <img style="width:10%; height:10%" src="/storage/app/public/{{$post->cover_image}}" alt="">
                                     </div>                                           
                                     <div class="post_details">
                                         <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
