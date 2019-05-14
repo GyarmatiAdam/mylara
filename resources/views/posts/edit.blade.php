@@ -18,10 +18,10 @@
                     {{Form::label('body', 'Body')}}
                     {{Form::textarea('body', $post->body, ['id' => 'editor1', 'class' => 'form-control', 'placeholder' => 'Text'])}}
                 </div>
-        <!-- uploaded or "no image" -->
+        <!-- uploaded or "no image" 
                 <div class="form-group">
                     {{Form::file('cover_image')}}
-                </div>
+                </div>-->
         <!--method send changes to posts page-->
                     {{Form::hidden('_method', 'PUT')}}
                     {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}

@@ -32,8 +32,8 @@
                                 <i class="fa fa-smile-o" aria-hidden="true"></i>
                                 </p>
                                 <br>
-                                <p>When and why did i get here? What and how do i want to achieve my goals? 
-                                    Read further and you will find an answer just below.</p>
+                                <p>Why and when did i get here? What are my goals, and how do i want to achieve them?
+                                    Read further for answers.</p>
                         </div>
                             <div class="row">
                                 <div id="linkedin_API">
