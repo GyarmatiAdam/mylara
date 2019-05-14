@@ -64,9 +64,9 @@ class PostsController extends Controller
 
 
         }
-        else{
+        /*else{
             $fileNameToStore = 'noimage.jpg';//if user do not upload image, uses that default to display
-        }
+        }*/
         //create Post
         $post = new Post;
         $post->title = $request->input('title');
