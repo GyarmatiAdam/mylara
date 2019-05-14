@@ -47,7 +47,7 @@ class PostsController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'body' => 'required',
-            //'cover_image' => 'image|nullable|max:1999' //the file has to be an image|validated after upload|less than 2 MB(because often thats Apache server limitation)
+            'cover_image' => 'image|nullable|max:1999' //the file has to be an image|validated after upload|less than 2 MB(because often thats Apache server limitation)
         ]);
         //Handle File Upload...checks if the user clicked on button and selected file to upload
         if($request->hasFile('cover_image')){
@@ -72,7 +72,7 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->user_id = auth()->user()->id;//authenticate the access to user_id//||get currently logged in user and put it into user_id
-        //$post->cover_image = $fileNameToStore;//either posts image or noimage.jpg
+        $post->cover_image = $fileNameToStore;//either posts image or noimage.jpg
         $post->save();                         
         return redirect('/posts')->with('success', 'Post Created');
     }
