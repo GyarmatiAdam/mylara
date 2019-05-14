@@ -72,7 +72,7 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->user_id = auth()->user()->id;//authenticate the access to user_id//||get currently logged in user and put it into user_id
-        $post->cover_image = $fileNameToStore;//either posts image or noimage.jpg
+        //$post->cover_image = $fileNameToStore;//either posts image or noimage.jpg
         $post->save();                         
         return redirect('/posts')->with('success', 'Post Created');
     }
